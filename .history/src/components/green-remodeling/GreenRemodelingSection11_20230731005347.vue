@@ -1,0 +1,117 @@
+<template>
+  <section>
+    <h2>간편 상담 신청</h2>
+    <div class="form">
+      <div>
+        <p>이름 {{ name }}</p>
+        <input v-model="name" placeholder="" />
+      </div>
+      <div>
+        <p>핸드폰 번호 {{ phone }}</p>
+        <input v-model="phone" placeholder="" />
+      </div>
+      <div>
+        <p>시공 지역 {{ address }}</p>
+        <input v-model="address" placeholder="시, 구, 동(까지 표기 되도록)" />
+      </div>
+      <div>
+        <p>시공 예상 시기 {{ expectDate }}</p>
+        <input v-model="expectDate" placeholder="즉시/ 3개월 이내/ 그 외" />
+      </div>
+      <div class="space-between">
+        <p>건물형태</p>
+        <div class="check-list" v-cloak>
+          <input
+            type="radio"
+            name="radioBtn"
+            id="r1"
+            @change="radioChange($event)"
+            value="첫번째 버튼"
+          />
+          <label for="r1">첫번째</label>
+          <input
+            type="radio"
+            name="radioBtn"
+            id="r2"
+            @change="radioChange($event)"
+            value="두번째 버튼"
+          />
+          <label for="r2">두번째</label>
+          <input
+            type="radio"
+            name="radioBtn"
+            id="r3"
+            @change="radioChange($event)"
+            value="세번째 버튼"
+          />
+          <label for="r3">세번재</label>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "GreenRemodelingSection11",
+  // components: { Swiper, SwiperSlide },
+};
+</script>
+
+<style scoped>
+section {
+  position: relative;
+
+  padding: 200px 20px 232px;
+  background-image: url("../../assets/green-remodeling-11.jpg");
+  background-size: cover;
+}
+img {
+  vertical-align: top;
+}
+
+h2 {
+  font-family: NEXONLv1GothicBold, sans-serif;
+  color: white;
+  font-size: 70px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  text-align: center;
+}
+.form {
+  background: white;
+  max-width: 1000px;
+  margin: 50px auto 0;
+  padding: 60px 74px;
+}
+input {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 10px;
+  font-size: 16px;
+  color: #343536;
+  border: 1px solid #343536;
+}
+.form > div p {
+  margin-bottom: 10px;
+  font-family: NEXONLv1GothicBold, sans-serif;
+  color: #343536;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+.form > div + div {
+  margin-top: 27px;
+}
+@media (min-width: 1264px) {
+}
+
+@media (min-width: 1625px) {
+}
+::placeholder {
+  color: #343536;
+  opacity: 0.3; /* Firefox */
+}
+</style>
