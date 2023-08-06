@@ -124,7 +124,7 @@ a {
   margin-right: 26px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .logo {
     width: 117px;
   }
@@ -174,7 +174,7 @@ a {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .logo {
     max-width: 13%;
     margin-left: 6%;

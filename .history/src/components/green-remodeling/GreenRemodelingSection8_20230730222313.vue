@@ -286,7 +286,7 @@ export default {
   components: { Swiper, SwiperSlide },
   computed: {
     slidesPerView: function () {
-      if (matchMedia("screen and (min-width: 960px)").matches) {
+      if (matchMedia("screen and (min-width: 768px)").matches) {
         return 6;
       } else {
         return 2;
