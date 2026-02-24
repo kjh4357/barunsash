@@ -42,36 +42,36 @@ export default {
 <style>
 @font-face {
   font-family: 'NEXONLv1GothicBold';
-  src: url('assets/font/NEXONLv1GothicBold.woff2') format('woff2');
+  src: url('assets/font/NEXONLv1GothicBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'NEXONLv1GothicLight';
-  src: url('assets/font/NEXONLv1GothicLight.woff2') format('woff2');
+  src: url('assets/font/NEXONLv1GothicLight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'NEXONLv1GothicRegular';
-  src: url('assets/font/NEXONLv1GothicRegular.woff2') format('woff2');
+  src: url('assets/font/NEXONLv1GothicRegular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Outfit-Bold';
-  src: url('assets/font/Outfit-Bold.woff2') format('woff2');
+  src: url('assets/font/Outfit-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Outfit-Light';
-  src: url('assets/font/Outfit-Light.woff2') format('woff2');
+  src: url('assets/font/Outfit-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Outfit-Regular';
-  src: url('assets/font/Outfit-Regular.woff2') format('woff2');
+  src: url('assets/font/Outfit-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Outfit-Medium';
-  src: url('assets/font/Outfit-Medium.woff2') format('woff2');
+  src: url('assets/font/Outfit-Medium.ttf') format('truetype');
 }
 </style>
