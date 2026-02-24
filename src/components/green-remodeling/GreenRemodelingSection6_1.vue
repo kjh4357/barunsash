@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="phrase-wrapper">
-      <img class="logo" src="../../assets/barun_logo.png" alt="" />
+      <img class="logo" src="../../assets/barun_logo.svg" alt="" />
       <div class="phrase">
         <h2 data-aos="fade-up" data-aos-duration="1500">샤시교체 현장소개</h2>
         <img
