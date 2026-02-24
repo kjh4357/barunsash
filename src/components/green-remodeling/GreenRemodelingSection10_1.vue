@@ -1,6 +1,6 @@
 <template>
   <section>
-    <img class="logo" src="../../assets/barun_logo.png" alt="" />
+    <img class="logo" src="../../assets/barun_logo.svg" alt="" />
     <div class="phrase-wrapper" data-aos="fade-up" data-aos-duration="1500">
       <div class="phrase">
         <h2>행복한 환경이 만들어지는 과정을 살펴볼까요?</h2>
