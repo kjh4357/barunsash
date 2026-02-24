@@ -19,8 +19,8 @@
               <router-link class="menu-item" to="/line-up"
                 >바른라인업</router-link
               >
-              <router-link class="menu-item" to="/green-remodeling"
-                >그린리모델링</router-link
+              <router-link class="menu-item" to="/barun-framework"
+                >바른시공</router-link
               >
               <router-link class="menu-item" to="/service-center"
                 >고객지원</router-link
@@ -71,16 +71,16 @@
 </template>
 
 <script>
-import FixedHeader from "vue-fixed-header";
-import BarunMenu from "@/components/BarunMenu";
-import BarunFooter from "@/components/BarunFooter";
-import LineUpSection1 from "@/components/lineup/LineUpSection1";
-import LineUpSection2 from "@/components/lineup/LineUpSection2";
-import LineUpSection3 from "@/components/lineup/LineUpSection3";
-import LineUpSection4 from "@/components/lineup/LineUpSection4";
+import FixedHeader from 'vue-fixed-header';
+import BarunMenu from '@/components/BarunMenu';
+import BarunFooter from '@/components/BarunFooter';
+import LineUpSection1 from '@/components/lineup/LineUpSection1';
+import LineUpSection2 from '@/components/lineup/LineUpSection2';
+import LineUpSection3 from '@/components/lineup/LineUpSection3';
+import LineUpSection4 from '@/components/lineup/LineUpSection4';
 
 export default {
-  name: "HistoryView",
+  name: 'HistoryView',
   components: {
     LineUpSection4,
     LineUpSection3,

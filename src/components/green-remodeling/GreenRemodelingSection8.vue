@@ -88,11 +88,18 @@
             data-aos-delay="500"
             data-aos-duration="1500"
           >
-            샤시는 시공도 중요하지만, 제조단계에서 완성도 높은 샤시 제품으로
-            출시되는 것, 매우 중요합니다.<br />
-            2022년 한국품질만족도 창호 부문 1위로 공식적으로 품질을
-            인정받았습니다.<br />
-            안전하고 편리한 제품을 위한 노력이 계속됩니다.
+            샤시는 시공도 중요하지만,
+            <span class="d-block d-md-inline"
+              >제조단계에서 완성도 높은 샤시 제품으로</span
+            >
+            출시되는 것, 매우 중요합니다.<br class="d-none d-lg-block" />
+            <span class="d-block d-md-inline">
+              2022년 한국품질만족도 창호 부문 1위로</span
+            >
+            공식적으로 품질을 인정받았습니다.<br class="d-none d-lg-block" />
+            <span class="d-block d-md-inline">
+              안전하고 편리한 제품을 위한 노력이 계속됩니다.</span
+            >
           </p>
           <div
             class="quality-list"
@@ -135,9 +142,10 @@
               >선택부터 쉽고 편리하게 서비스를 받아 볼 수 있도록</span
             >
             표준화하였습니다.<br class="d-none d-lg-block" />
-            국토부 그린리모델링 바른샤시시에
+
             <span class="d-block d-lg-inline"
-              >대해서 아래처럼 바른 매니저의 안내를 받아 보세요.</span
+              >바른샤시에 대해서 아래처럼 바른 매니저의 안내를 받아
+              보세요.</span
             >
           </p>
         </li>
@@ -333,19 +341,19 @@
 </template>
 
 <script>
-import { Autoplay, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperCore, SwiperSlide } from "swiper-vue2";
+import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperCore, SwiperSlide } from 'swiper-vue2';
 // Import Swiper styles
-import "swiper/swiper-bundle.css";
+import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 export default {
-  name: "GreenRemodelingSection8",
+  name: 'GreenRemodelingSection8',
 
   components: { Swiper, SwiperSlide },
   computed: {
     slidesPerView: function () {
-      return "auto";
+      return 'auto';
       // if (matchMedia("screen and (min-width: 1200px)").matches) {
       //   return 6;
       // } else if (matchMedia("screen and (min-width: 787px)").matches) {
@@ -406,6 +414,7 @@ li {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -1px;
+  word-break: keep-all;
 }
 .wrapper > ul > li.last {
   margin-top: 70px;
@@ -546,7 +555,7 @@ li {
   .wrapper h2 {
     margin-top: 23px;
     font-size: 64px;
-    line-height: 74px;
+    line-height: 84px;
   }
   .wrapper .desc {
     font-size: 24px;
@@ -613,6 +622,14 @@ li {
   }
 }
 
-@media (min-width: 1625px) {
+@media (max-width: 370px) {
+  .wrapper h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .wrapper .desc {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 </style>

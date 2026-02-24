@@ -1,60 +1,51 @@
 <template>
   <section>
+    <img class="logo" src="../../assets/barun_logo.png" alt="" />
     <div class="phrase-wrapper" data-aos="fade-up" data-aos-duration="1500">
       <div class="phrase">
-        <h2>시공사례</h2>
+        <h2>행복한 환경이 만들어지는 과정을 살펴볼까요?</h2>
       </div>
     </div>
     <div
-      class="slide-wrapper"
+      class="environment-list"
       data-aos="fade-up"
-      data-aos-delay="500"
+      data-aos-delay="250"
       data-aos-duration="1500"
     >
-      <swiper
-        :autoplay="{
-          delay: 0,
-        }"
-        :loop="true"
-        :free-mode="false"
-        :slides-per-view="slidesPerView"
-        :spaceBetween="30"
-        :speed="5000"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-duration="1000"
+      <ul>
+        <li>
+          <img src="../../assets/green-remodeling-environment-1.jpg" alt="" />
+        </li>
+        <li>
+          <img src="../../assets/green-remodeling-environment-2.jpg" alt="" />
+        </li>
+        <li>
+          <img src="../../assets/green-remodeling-environment-3.jpg" alt="" />
+        </li>
+        <li>
+          <img src="../../assets/green-remodeling-environment-4.jpg" alt="" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="area-btn">
+      <a
+        href="https://blog.naver.com/barunsash"
+        target="_blank"
+        title="새창 열림"
+        >다양한 시공사례 보러가기</a
       >
-        <swiper-slide>
-          <img src="../../assets/green-remodeling-construction-1.jpg" alt="" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../../assets/green-remodeling-construction-2.jpg" alt="" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../../assets/green-remodeling-construction-3.jpg" alt="" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../../assets/green-remodeling-construction-4.jpg" alt="" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../../assets/green-remodeling-construction-5.jpg" alt="" />
-        </swiper-slide>
-      </swiper>
     </div>
   </section>
 </template>
 
 <script>
-import { Autoplay, Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperCore, SwiperSlide } from 'swiper-vue2';
 // Import Swiper styles
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Autoplay, Pagination, Navigation]);
-
 export default {
   name: 'GreenRemodelingSection10',
-  components: { Swiper, SwiperSlide },
+
   computed: {
     slidesPerView: function () {
       return 'auto';
@@ -74,17 +65,14 @@ export default {
 section {
   position: relative;
   padding: 120px 20px 160px;
-  background-color: #f0f0f0;
 }
+
 img.logo {
   position: absolute;
   right: 20px;
   top: 20px;
   vertical-align: top;
   width: 82px;
-}
-img {
-  vertical-align: top;
 }
 ul {
   padding-left: 0;

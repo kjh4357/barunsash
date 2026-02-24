@@ -1,7 +1,14 @@
 <template>
   <div class="popup" v-if="visible">
-    <v-img :src="require('../assets/popup.jpg')" class="d-none d-md-block"/>
-    <v-img :src="require('../assets/popup-mobile.jpg')" class="d-block d-md-none"/>
+    <VueSlickCarousel :arrows="false" :dots="false" :autoplay="true" :autoplaySpeed="3000">
+      <div v-for="(img, index) in desktopImages" :key="'desktop-' + index" class="d-md-block">
+        <v-img :src="require(`../assets/${img}`)" />
+      </div>
+<!--      <div v-for="(img, index) in mobileImages" :key="'mobile-' + index" class="d-block d-md-none">-->
+<!--        <v-img :src="require(`../assets/${img}`)" />-->
+<!--      </div>-->
+    </VueSlickCarousel>
+
     <div class="popup-buttons">
       <div class="popup-button-1" @click="noSeeDayEmit">오늘하루그만보기</div>
       <div class="popup-button-2" @click="closeEmit">닫기</div>
@@ -10,20 +17,30 @@
 </template>
 
 <script>
-export default {
-  name: "PopupDialog",
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
+export default {
+  name: 'PopupDialog',
+  components: { VueSlickCarousel },
   props: { visible: Boolean },
+
+  data() {
+    return {
+      desktopImages: ['img_popup_01.png', 'img_popup_02.png'],
+      mobileImages: ['img_popup_01.png', 'img_popup_02.png'],
+    }
+  },
 
   methods: {
     closeEmit() {
-      this.$emit("close")
+      this.$emit('close')
     },
-
     noSeeDayEmit() {
-      this.$emit("noSee")
-    }
-  }
+      this.$emit('noSee')
+    },
+  },
 }
 </script>
 
@@ -46,10 +63,11 @@ export default {
   width: 512px;
 }
 
-.popup-button-1, .popup-button-2 {
+.popup-button-1,
+.popup-button-2 {
   cursor: pointer;
   width: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 0;
   font-size: 20px;
 }
@@ -65,17 +83,17 @@ export default {
 @media (max-width: 959px) {
   .popup {
     top: 100px;
-    width: 100%;
+    width: 70%;
   }
 
   .popup-buttons {
     width: 100%;
   }
 
-  .popup-button-1, .popup-button-2 {
+  .popup-button-1,
+  .popup-button-2 {
     font-size: 18px;
     color: #000000;
   }
 }
-
 </style>

@@ -3,8 +3,8 @@
     <div class="phrase-wrapper">
       <div class="phrase">
         <h2 data-aos="fade-up" data-aos-duration="1500">
-          국토부
-          <span class="d-block d-md-inline-block">그린리모델링 사업</span>
+          제조부터 시공까지
+          <span class="d-block d-md-inline-block">샤시교체 전문기업</span>
         </h2>
         <p data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500">
           합리적 고품질 샤시 바른샤시,
@@ -28,14 +28,14 @@
       </div>
     </div>
     <div class="label">
-      <p>그린리모델링 사업자등록 기업 바른샤시</p>
+      <p>바른시공 샤시교체 전문기업</p>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "GreenRemodelingSection1",
+  name: 'GreenRemodelingSection1',
   // components: { Swiper, SwiperSlide },
 };
 </script>
@@ -45,7 +45,7 @@ section {
   position: relative;
   height: 100vh;
   padding-top: 10px;
-  background: url("../../assets/green-remodeling-1.jpg") center center no-repeat;
+  background: url('../../assets/green-remodeling-1.jpg') center center no-repeat;
   background-size: cover;
 }
 img {
@@ -101,8 +101,7 @@ img {
   font-family: NEXONLv1GothicBold, sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: #3b4b6c;
-  background: white;
+  color: white;
 }
 @media (min-width: 960px) {
   .phrase h2 {

@@ -1,9 +1,10 @@
 <template>
   <section>
     <div class="phrase-wrapper">
+      <img src="../../assets/barun_logo.svg" alt="" />
       <div class="phrase">
         <h2 data-aos="fade-up" data-aos-duration="1500">
-          <span>그린리모델링</span> 샤시교체
+          <span>바른시공</span> 샤시교체
           <strong class="d-block d-lg-inline">전문 바른샤시</strong>
         </h2>
         <span
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  name: "GreenRemodelingSection7",
+  name: 'GreenRemodelingSection7',
   // components: { Swiper, SwiperSlide },
 };
 </script>
@@ -40,12 +41,16 @@ export default {
 <style scoped>
 section {
   position: relative;
-  background: url("../../assets/green-remodeling-7.jpg") 0 center no-repeat;
+  background: url('../../assets/green-remodeling-7.jpg') 0 center no-repeat;
   background-size: cover;
   padding: 100px 20px 105px;
 }
 img {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   vertical-align: top;
+  width: 82px;
 }
 .phrase-wrapper {
   display: flex;
@@ -61,7 +66,7 @@ img {
   font-family: NEXONLv1GothicBold, sans-serif;
   color: white;
   font-size: 38px;
-  line-height: 43px;
+  line-height: 48px;
   letter-spacing: -1px;
 }
 .phrase h2 span {
@@ -84,14 +89,20 @@ img {
   line-height: 32px;
   letter-spacing: -1px;
   opacity: 0.7;
+  word-break: keep-all;
 }
 
 @media (min-width: 960px) {
   section {
-    background: url("../../assets/green-remodeling-7.jpg") center center
+    background: url('../../assets/green-remodeling-7.jpg') center center
       no-repeat;
     background-size: cover;
     padding: 160px 20px;
+  }
+  img {
+    right: 60px;
+    top: 60px;
+    width: auto;
   }
   .phrase h2 {
     font-size: 96px;
@@ -108,10 +119,19 @@ img {
   .phrase .sub {
     margin-top: 68px;
     font-size: 32px;
-    line-height: 40px;
+    line-height: 48px;
   }
 }
-@media (min-width: 1264px) {
+@media (max-width: 360px) {
+  img {
+    width: 82px;
+  }
+  .phrase .sub {
+    margin-top: 30px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 @media (min-width: 1625px) {

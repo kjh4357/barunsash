@@ -1,10 +1,8 @@
 <template>
   <section>
     <div class="phrase-wrapper">
+      <img class="logo" src="../../assets/barun_logo.svg" alt="" />
       <div class="phrase">
-        <p class="sub-tit" data-aos="fade-up" data-aos-duration="1500">
-          그린리모델링
-        </p>
         <h2 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
           바른샤시 <span class="d-block d-md-inline">대표제품 특징</span>
         </h2>
@@ -66,7 +64,7 @@
 
 <script>
 export default {
-  name: "GreenRemodelingSection9",
+  name: 'GreenRemodelingSection9',
   // components: { Swiper, SwiperSlide },
 };
 </script>
@@ -77,8 +75,12 @@ section {
   padding: 61px 20px 57px;
   background: #162138;
 }
-img {
+img.logo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   vertical-align: top;
+  width: 82px;
 }
 .phrase-wrapper {
   display: flex;
@@ -164,6 +166,11 @@ li .desc p {
 @media (min-width: 960px) {
   section {
     padding: 180px 20px 145px;
+  }
+  img.logo {
+    right: 60px;
+    top: 60px;
+    width: auto;
   }
   .phrase h2 {
     font-size: 68px;

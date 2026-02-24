@@ -3,14 +3,13 @@
     <BarunHeader />
     <GreenRemodelingSection1 />
     <GreenRemodelingSection2 />
-    <GreenRemodelingSection3 />
-    <GreenRemodelingSection4 />
-    <GreenRemodelingSection5 />
-    <GreenRemodelingSection6 />
+
+    <GreenRemodelingSection6_1 />
     <GreenRemodelingSection7 />
     <GreenRemodelingSection8 />
     <GreenRemodelingSection9 />
     <GreenRemodelingSection10 />
+    <GreenRemodelingSection10_1 />
     <GreenRemodelingSection11 />
 
     <BarunFooter style="margin-top: 35px" />
@@ -18,41 +17,39 @@
 </template>
 
 <script>
-import BarunHeader from "@/components/BarunHeader";
-import BarunFooter from "@/components/BarunFooter";
-import GreenRemodelingSection1 from "@/components/green-remodeling/GreenRemodelingSection1";
-import GreenRemodelingSection2 from "@/components/green-remodeling/GreenRemodelingSection2";
-import GreenRemodelingSection3 from "@/components/green-remodeling/GreenRemodelingSection3";
-import GreenRemodelingSection4 from "@/components/green-remodeling/GreenRemodelingSection4";
-import GreenRemodelingSection5 from "@/components/green-remodeling/GreenRemodelingSection5";
-import GreenRemodelingSection6 from "@/components/green-remodeling/GreenRemodelingSection6";
-import GreenRemodelingSection7 from "@/components/green-remodeling/GreenRemodelingSection7";
-import GreenRemodelingSection8 from "@/components/green-remodeling/GreenRemodelingSection8";
-import GreenRemodelingSection9 from "@/components/green-remodeling/GreenRemodelingSection9";
-import GreenRemodelingSection10 from "@/components/green-remodeling/GreenRemodelingSection10";
-import GreenRemodelingSection11 from "@/components/green-remodeling/GreenRemodelingSection11";
+import BarunHeader from '@/components/BarunHeader';
+import BarunFooter from '@/components/BarunFooter';
+import GreenRemodelingSection1 from '@/components/green-remodeling/GreenRemodelingSection1';
+import GreenRemodelingSection2 from '@/components/green-remodeling/GreenRemodelingSection2';
+import GreenRemodelingSection6_1 from '@/components/green-remodeling/GreenRemodelingSection6_1';
+
+import GreenRemodelingSection7 from '@/components/green-remodeling/GreenRemodelingSection7';
+import GreenRemodelingSection8 from '@/components/green-remodeling/GreenRemodelingSection8';
+import GreenRemodelingSection9 from '@/components/green-remodeling/GreenRemodelingSection9';
+import GreenRemodelingSection10 from '@/components/green-remodeling/GreenRemodelingSection10';
+import GreenRemodelingSection10_1 from '@/components/green-remodeling/GreenRemodelingSection10_1';
+import GreenRemodelingSection11 from '@/components/green-remodeling/GreenRemodelingSection11';
 
 export default {
-  name: "GreenRemodelingView",
+  name: 'GreenRemodelingView',
   components: {
     GreenRemodelingSection1,
     GreenRemodelingSection2,
-    GreenRemodelingSection3,
-    GreenRemodelingSection4,
-    GreenRemodelingSection5,
-    GreenRemodelingSection6,
+    // GreenRemodelingSection3,
+    // GreenRemodelingSection4,
+    // GreenRemodelingSection5,
+    // GreenRemodelingSection6,
+    GreenRemodelingSection6_1,
     GreenRemodelingSection7,
     GreenRemodelingSection8,
     GreenRemodelingSection9,
     GreenRemodelingSection10,
+    GreenRemodelingSection10_1,
     GreenRemodelingSection11,
 
     BarunFooter,
     BarunHeader,
   },
-  // mounted() {
-  //   window.scrollTo(0, 0);
-  // },
 
   // data: () => ({
   //   menuShow: false,
