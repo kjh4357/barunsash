@@ -28,8 +28,8 @@ export default {
 
   data() {
     return {
-      desktopImages: ['img_popup_01.png', 'img_popup_02.png'],
-      mobileImages: ['img_popup_01.png', 'img_popup_02.png'],
+      desktopImages: ['img_popup_00.png','img_popup_01.png', 'img_popup_02.png'],
+      mobileImages: ['img_popup_00.png','img_popup_01.png', 'img_popup_02.png'],
     }
   },
 
