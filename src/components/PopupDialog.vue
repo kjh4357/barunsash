@@ -1,6 +1,6 @@
 <template>
   <div class="popup" v-if="visible">
-    <VueSlickCarousel :arrows="false" :dots="false" :autoplay="true" :autoplaySpeed="3000">
+    <VueSlickCarousel :arrows="false" :dots="false" :autoplay="true" :autoplaySpeed="3000" :adaptiveHeight="true">
       <div v-for="(img, index) in desktopImages" :key="'desktop-' + index" class="d-md-block">
         <v-img :src="require(`../assets/${img}`)" />
       </div>
