@@ -1,6 +1,6 @@
 <template>
   <div class="popup" v-if="visible">
-    <VueSlickCarousel :arrows="false" :dots="false" :autoplay="true" :autoplaySpeed="3000" :adaptiveHeight="true">
+    <VueSlickCarousel v-if="ready" :arrows="false" :dots="false" :autoplay="true" :autoplaySpeed="3000" :adaptiveHeight="true">
       <div v-for="(img, index) in desktopImages" :key="'desktop-' + index" class="d-md-block">
         <v-img :src="require(`../assets/${img}`)" />
       </div>
@@ -30,7 +30,14 @@ export default {
     return {
       desktopImages: ['img_popup_00.png','img_popup_01.png', 'img_popup_02.png'],
       mobileImages: ['img_popup_00.png','img_popup_01.png', 'img_popup_02.png'],
+      ready: false,
     }
+  },
+
+  mounted() {
+    const img = new Image()
+    img.src = require(`../assets/${this.desktopImages[0]}`)
+    img.onload = () => { this.ready = true }
   },
 
   methods: {
